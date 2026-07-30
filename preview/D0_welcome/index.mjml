@@ -139,7 +139,7 @@
     </mj-section>
 
     <!-- Flow 1 -->
-    <mj-section background-color="#F5F3FA" padding="24px 32px 8px" border-left="none" border-right="none" css-class="pad-mob">
+    <mj-section background-color="#F5F3FA" padding="24px 32px 8px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
           💬 채팅으로 <span class="hl">PRD 초안</span> 만들기
@@ -155,7 +155,7 @@
     </mj-section>
 
     <!-- Flow 2 -->
-    <mj-section background-color="#F5F3FA" padding="16px 32px 8px" border-left="none" border-right="none" css-class="pad-mob">
+    <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
           📄 <span class="hl">와이어프레임과 기능명세서</span>로 개발자에게 넘기기
@@ -171,7 +171,7 @@
     </mj-section>
 
     <!-- Flow 3 -->
-    <mj-section background-color="#F5F3FA" padding="16px 32px 32px" border-left="none" border-right="none" css-class="pad-mob">
+    <mj-section background-color="#F5F3FA" padding="16px 32px 32px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
           🔗 <span class="hl">MCP 연동</span>으로 바로 개발까지
@@ -220,7 +220,7 @@
     </mj-section>
 
     <!-- Footer -->
-    <mj-section background-color="#F5F3FA" padding="28px 32px 36px" border-left="none" border-right="none">
+    <mj-section background-color="#F5F3FA" padding="28px 32px 36px">
       <mj-column>
         <mj-text align="center" color="#6B7280" font-size="13px" line-height="1.7" padding="0 0 12px">
           <a href="https://manyfast.io/ko/" style="color:#4A4A5E;">대시보드</a> &nbsp; <a href="https://manyfast.io/features/ai" style="color:#4A4A5E;">사용 가이드</a> &nbsp; <a href="https://blog.manyfast.io" style="color:#4A4A5E;">블로그</a> &nbsp; <a href="https://forum.manyfast.io" style="color:#4A4A5E;">포럼</a>
