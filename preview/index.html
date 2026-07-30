@@ -5,48 +5,79 @@
 <title>매니패스트 CRM 이메일 미리보기</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; background: #F5F3FA; color: #1F1F2E; max-width: 720px; margin: 40px auto; padding: 24px; word-break: keep-all; }
-  h1 { font-size: 24px; letter-spacing: -0.3px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; background: #F5F3FA; color: #1F1F2E; max-width: 760px; margin: 40px auto; padding: 24px; word-break: keep-all; }
+  h1 { font-size: 26px; letter-spacing: -0.3px; margin: 0 0 8px; }
+  h2 { font-size: 15px; letter-spacing: 0.3px; color: #6A3FD1; margin: 40px 0 8px; text-transform: none; font-weight: 800; }
+  .section-note { color: #6B7280; font-size: 13px; margin: 0 0 12px; line-height: 1.65; }
   .card { background: #ffffff; border: 1px solid #EBE6F2; border-radius: 12px; padding: 20px 22px; margin: 12px 0; }
   .label { font-size: 12px; font-weight: 700; color: #6A3FD1; letter-spacing: 0.3px; }
-  .title { font-size: 17px; font-weight: 700; margin: 4px 0 6px; }
+  .title { font-size: 17px; font-weight: 700; margin: 4px 0 6px; line-height: 1.4; }
   .desc { font-size: 14px; color: #4A4A5E; line-height: 1.65; margin: 0 0 10px; }
   a { color: #6A3FD1; font-weight: 600; text-decoration: underline; }
-  .muted { color: #6B7280; font-size: 13px; margin-top: 32px; }
+  .muted { color: #6B7280; font-size: 13px; margin-top: 32px; line-height: 1.7; }
+  code { background: #F4F4F6; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
 </style>
 </head>
 <body>
   <h1>매니패스트 CRM 이메일 미리보기</h1>
-  <p class="muted" style="margin-top:8px;">발송 시점: 회원가입 기준 D+0 · D+1 · D+3 · D+7 4통 시퀀스</p>
+  <p class="section-note">발송 시퀀스: 회원가입 기준 D+0, D+1, D+3, D+7 표준 4통 + 행동 기반 분기 3통 (온보딩 미완료 유저 대상).</p>
+
+  <h2>표준 시퀀스</h2>
+  <p class="section-note">전체 가입자 대상, 시간 기준 자동 발송.</p>
 
   <div class="card">
     <div class="label">D+0 · 가입 당일</div>
     <div class="title">매니패스트에 오신 것을 환영해요</div>
-    <div class="desc">허재혁 창업자의 편지 · 매니패스트로 할 수 있는 세 가지 소개</div>
+    <div class="desc">허재혁 창업자의 편지, 매니패스트로 할 수 있는 세 가지 소개.</div>
     <a href="D0_welcome/">D+0 미리보기 열기 →</a>
   </div>
 
   <div class="card">
     <div class="label">D+1 · 가입 다음날 오전 9시</div>
     <div class="title">오늘의 미션: 5분 만에 첫 PRD 초안 만들기</div>
-    <div class="desc">채팅으로 첫 PRD 만들기 5단계 미션</div>
+    <div class="desc">채팅으로 첫 PRD 만들기 5단계 미션.</div>
     <a href="D1_mission1_prd/">D+1 미리보기 열기 →</a>
   </div>
 
   <div class="card">
     <div class="label">D+3 · 가입 3일 뒤 오전 9시</div>
     <div class="title">오늘의 미션: PRD 하나로 와이어프레임과 개발까지</div>
-    <div class="desc">와이어프레임, 기능명세서, MCP 연동 4단계 미션</div>
+    <div class="desc">와이어프레임, 기능명세서, MCP 연동 4단계 미션.</div>
     <a href="D3_mission2_spec/">D+3 미리보기 열기 →</a>
   </div>
 
   <div class="card">
     <div class="label">D+7 · 가입 일주일 뒤</div>
     <div class="title">일주일이 지났네요. 매니패스트, 어떠셨어요?</div>
-    <div class="desc">창업자 회고 편지 · 커뮤니티 초대 · 피드백 요청</div>
+    <div class="desc">창업자 회고 편지, 커뮤니티 초대, 피드백 요청.</div>
     <a href="D7_recap/">D+7 미리보기 열기 →</a>
   </div>
 
-  <p class="muted">각 편지의 <code>재훈</code> 이름은 실제 Loops 발송 시 <code>{firstName}</code> 변수로 교체 예정입니다.</p>
+  <h2>행동 기반 분기 (미완료 유저 대상)</h2>
+  <p class="section-note">7/29 미팅에서 광고주가 요청한 시나리오. 표준 시퀀스와 병행하지 않고, 특정 기능 미사용자에게만 별도로 발송합니다. 정확한 발송 시점과 대상 조건은 프로덕션 이벤트 연동 완료 후 확정 예정.</p>
+
+  <div class="card">
+    <div class="label">분기 A · PRD 미생성자</div>
+    <div class="title">재훈님, 5분이면 첫 결과가 나와요</div>
+    <div class="desc">대상 조건 예시: 가입 후 <code>project_created</code> 이벤트 없음. 톤: 창업자의 짧은 리마인더, 예시 문장 3개 제시.</div>
+    <a href="branch_no_prd/">분기 A 미리보기 열기 →</a>
+  </div>
+
+  <div class="card">
+    <div class="label">분기 B · 와이어프레임 미생성자</div>
+    <div class="title">재훈님, PRD 이후 3분이면 와이어프레임까지 이어져요</div>
+    <div class="desc">대상 조건 예시: <code>prd_created</code>는 있는데 <code>wireframe_created</code> 없음. 톤: 다음 단계로 넘어가는 것에 대한 부드러운 안내.</div>
+    <a href="branch_no_wireframe/">분기 B 미리보기 열기 →</a>
+  </div>
+
+  <div class="card">
+    <div class="label">분기 C · MCP 미연동자</div>
+    <div class="title">재훈님, 이제 개발까지 잇는 마지막 단계 하나 남았어요</div>
+    <div class="desc">대상 조건 예시: <code>wireframe_created</code>는 있는데 <code>mcp_connected</code> 없음. 톤: 매니패스트가 진짜 힘을 발휘하는 최종 단계 강조.</div>
+    <a href="branch_no_mcp/">분기 C 미리보기 열기 →</a>
+  </div>
+
+  <p class="muted">각 편지의 <code>재훈</code> 이름은 실제 Loops 발송 시 <code>{firstName}</code> 변수로 교체 예정입니다.<br />
+  결제 창 이탈 유저 대상 분기 편지는 아직 준비되지 않았습니다. 이벤트 정의가 확정되면 추가 작성 가능합니다.</p>
 </body>
 </html>
