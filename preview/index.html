@@ -5,18 +5,48 @@
 <title>매니패스트 CRM 이메일 미리보기</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; background: #F5F3FA; color: #1F1F2E; max-width: 720px; margin: 40px auto; padding: 24px; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; background: #F5F3FA; color: #1F1F2E; max-width: 720px; margin: 40px auto; padding: 24px; word-break: keep-all; }
   h1 { font-size: 24px; letter-spacing: -0.3px; }
-  ul { padding-left: 20px; line-height: 1.9; }
+  .card { background: #ffffff; border: 1px solid #EBE6F2; border-radius: 12px; padding: 20px 22px; margin: 12px 0; }
+  .label { font-size: 12px; font-weight: 700; color: #6A3FD1; letter-spacing: 0.3px; }
+  .title { font-size: 17px; font-weight: 700; margin: 4px 0 6px; }
+  .desc { font-size: 14px; color: #4A4A5E; line-height: 1.65; margin: 0 0 10px; }
   a { color: #6A3FD1; font-weight: 600; text-decoration: underline; }
   .muted { color: #6B7280; font-size: 13px; margin-top: 32px; }
 </style>
 </head>
 <body>
   <h1>매니패스트 CRM 이메일 미리보기</h1>
-  <ul>
-    <li><a href="D0_welcome/">D+0 · 환영 편지</a> (가입 당일 발송)</li>
-  </ul>
-  <p class="muted">D+1, D+3, D+7 편은 컨펌 후 추가 예정입니다.</p>
+  <p class="muted" style="margin-top:8px;">발송 시점: 회원가입 기준 D+0 · D+1 · D+3 · D+7 4통 시퀀스</p>
+
+  <div class="card">
+    <div class="label">D+0 · 가입 당일</div>
+    <div class="title">매니패스트에 오신 것을 환영해요</div>
+    <div class="desc">허재혁 창업자의 편지 · 매니패스트로 할 수 있는 세 가지 소개</div>
+    <a href="D0_welcome/">D+0 미리보기 열기 →</a>
+  </div>
+
+  <div class="card">
+    <div class="label">D+1 · 가입 다음날 오전 9시</div>
+    <div class="title">오늘의 미션: 5분 만에 첫 PRD 초안 만들기</div>
+    <div class="desc">채팅으로 첫 PRD 만들기 5단계 미션</div>
+    <a href="D1_mission1_prd/">D+1 미리보기 열기 →</a>
+  </div>
+
+  <div class="card">
+    <div class="label">D+3 · 가입 3일 뒤 오전 9시</div>
+    <div class="title">오늘의 미션: PRD 하나로 와이어프레임과 개발까지</div>
+    <div class="desc">와이어프레임, 기능명세서, MCP 연동 4단계 미션</div>
+    <a href="D3_mission2_spec/">D+3 미리보기 열기 →</a>
+  </div>
+
+  <div class="card">
+    <div class="label">D+7 · 가입 일주일 뒤</div>
+    <div class="title">일주일이 지났네요. 매니패스트, 어떠셨어요?</div>
+    <div class="desc">창업자 회고 편지 · 커뮤니티 초대 · 피드백 요청</div>
+    <a href="D7_recap/">D+7 미리보기 열기 →</a>
+  </div>
+
+  <p class="muted">각 편지의 <code>재훈</code> 이름은 실제 Loops 발송 시 <code>{firstName}</code> 변수로 교체 예정입니다.</p>
 </body>
 </html>

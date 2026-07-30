@@ -1,0 +1,243 @@
+<mjml lang="ko">
+  <mj-head>
+    <mj-title>오늘의 미션: PRD 하나로 와이어프레임과 개발까지</mj-title>
+    <mj-preview>3분이면 PRD가 와이어프레임, 기능명세서, MCP 연동까지 이어져요.</mj-preview>
+    <mj-font name="Pretendard" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <mj-attributes>
+      <mj-all font-family="Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif" />
+      <mj-text color="#1F1F2E" font-size="16px" line-height="1.75" />
+      <mj-section background-color="#ffffff" padding="0" border-left="1px solid #EBE6F2" border-right="1px solid #EBE6F2" />
+      <mj-button background-color="#845DDE" color="#ffffff" font-weight="700" font-size="16px" inner-padding="16px 32px" border-radius="10px" />
+    </mj-attributes>
+    <mj-style>
+      p, div, td, span, a, strong { word-break: keep-all; overflow-wrap: break-word; }
+      a { color: #6A3FD1; text-decoration: none; font-weight: 600; }
+      a:hover { text-decoration: underline; }
+      .arrow-link a { text-decoration: underline; }
+      .hl { background: linear-gradient(180deg, transparent 60%, #E9DEFF 60%); padding: 0 2px; font-weight: 700; color: #1F1F2E; }
+      .accent { color: #6A3FD1; font-weight: 700; }
+      @media only screen and (max-width:600px) {
+        .h1-mob { font-size: 26px !important; line-height: 1.35 !important; }
+        .h2-mob { font-size: 20px !important; line-height: 1.4 !important; }
+        .pad-mob > table > tbody > tr > td { padding-left: 20px !important; padding-right: 20px !important; }
+      }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F5F3FA" width="600px">
+
+    <mj-section background-color="#ffffff" padding="28px 32px 20px" css-class="pad-mob">
+      <mj-column>
+        <mj-image src="img/00_manyfast_logo.png" alt="Manyfast" align="left" width="160px" padding="0" href="https://manyfast.io/ko/" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Greeting -->
+    <mj-section background-color="#ffffff" padding="8px 32px 8px" css-class="pad-mob">
+      <mj-column>
+        <mj-text css-class="h1-mob" font-size="28px" line-height="1.3" font-weight="800" color="#1F1F2E" padding="0 0 12px" letter-spacing="-0.5px">
+          재훈님, <span class="hl">매니패스트가 진짜 힘을 발휘하는 건 지금부터</span>예요.
+        </mj-text>
+        <mj-text padding="0 0 8px" color="#4A4A5E" font-size="16px" line-height="1.7">
+          이틀 전에 채팅으로 첫 PRD 초안을 만드는 미션을 드렸어요. 실제로 완성해보셨다면 이 메일이 특히 즐거우실 거예요.
+        </mj-text>
+        <mj-text padding="12px 0 0" font-size="17px" line-height="1.7" color="#1F1F2E">
+          오늘 미션은 방금 만든 그 PRD 하나를 <strong>와이어프레임과 기능명세서로 확장하고, MCP 연동으로 바로 개발까지 잇는 것</strong>이에요. 3분이면 됩니다.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why box -->
+    <mj-section background-color="#ffffff" padding="24px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#F4F4F6" border-radius="16px" padding="24px">
+        <mj-text font-size="14px" font-weight="700" color="#6A3FD1" padding="0 0 10px" letter-spacing="0.3px">
+          왜 이게 중요할까요
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px">
+          PRD 넘겼는데 개발자가 되묻는 미팅, 다들 경험해보셨을 거예요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#4A4A5E" padding="0 0 16px" font-style="italic">
+          "이 기능 어디에 붙는 화면이에요?"<br />
+          "이 예외 케이스에서 어떻게 처리해요?"<br />
+          "여기 정책이 앞뒤가 안 맞는데, 어떤 게 맞아요?"
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px">
+          기획서가 <span class="hl">사람 눈에만 읽히도록</span> 쓰여 있으면, 개발자도 AI 도구도 매번 되물어야 하는 상황이 반복돼요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px" font-style="italic">
+          "기획자가 넘긴 문서 안에는 '화면 A에서 버튼 눌러 화면 B로 이동' 같은 표현이 흩어져 있죠. 사람이 읽으면 문제없어 보이지만, 개발자에게는 화면들을 하나하나 매핑해야 하는 재해석 작업이 됩니다. 매 재해석마다 오해가 생기고, 오해는 결국 QA에서 터집니다."
+        </mj-text>
+        <mj-text font-size="14px" color="#6B7280" padding="0 0 12px" css-class="arrow-link">
+          <a href="https://blog.manyfast.io/blog/%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC-%ED%99%94%EB%82%98%EA%B2%8C-%ED%95%98%EB%8A%94-%EA%B8%B0%ED%9A%8D%EC%84%9C%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A0%A4%EB%A9%B4">매니패스트 블로그: 「개발자를 화나게 하는 기획서를 만들지 않으려면」 →</a>
+        </mj-text>
+        <mj-divider border-color="#E5E5EA" border-width="1px" padding="8px 0 16px" />
+        <mj-text font-size="16px" line-height="1.75" font-weight="700" color="#1F1F2E" padding="0">
+          매니패스트가 만드는 PRD는 처음부터 <span class="hl">와이어프레임, 기능, 사용자 흐름이 구조적으로 연결</span>돼 있어요. 그래서 클릭 한 번으로 이어지고, 그 문서를 그대로 AI 개발 도구가 이해할 수 있습니다.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="24px 32px 0">
+      <mj-column>
+        <mj-divider border-color="#F3ECFF" border-width="1px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Mission title -->
+    <mj-section background-color="#ffffff" padding="24px 32px 8px" css-class="pad-mob">
+      <mj-column>
+        <mj-text css-class="h1-mob" font-size="26px" font-weight="800" color="#1F1F2E" padding="0 0 12px" letter-spacing="-0.3px" line-height="1.35">
+          💙 오늘의 미션 <span class="accent">(3분)</span>
+        </mj-text>
+        <mj-text color="#6B7280" font-size="15px" padding="0 0 12px" line-height="1.7">
+          PRD를 와이어프레임, 기능명세서, 개발까지 잇는 4단계.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 1 -->
+    <mj-section background-color="#F5F3FA" padding="24px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
+        <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
+          <span class="accent">Step 1.</span> 어제 만든 PRD 프로젝트를 열어요
+        </mj-text>
+        <mj-image src="img/09_project_card_menu.png" alt="PRD 프로젝트 열기" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-text padding="0" font-size="15px" line-height="1.7">
+          매니패스트 대시보드에서 어제 만드신 프로젝트를 열어주세요. 아직 만들지 않으셨다면 <a href="https://manyfast.io/ko/">1편 미션</a>부터 다녀오셔도 좋아요.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 2 -->
+    <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
+        <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
+          <span class="accent">Step 2.</span> <span class="hl">와이어프레임</span>을 자동으로 생성해요
+        </mj-text>
+        <mj-image src="img/10_custom_generation.png" alt="와이어프레임 자동 생성" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
+          프로젝트 안에서 <strong>[와이어프레임 생성]</strong> 버튼을 눌러주세요. PRD에 담긴 사용자 흐름을 기반으로 각 화면과 화면 간 전환이 자동으로 정리됩니다.
+        </mj-text>
+        <mj-text padding="0" font-size="14px" line-height="1.7" color="#4A4A5E">
+          만들어진 와이어프레임은 그대로 확인, 수정할 수 있고, 필요하면 채팅으로 <em>"이 화면에 검색 기능 추가해줘"</em> 같은 요청도 가능해요.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 3 -->
+    <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
+        <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
+          <span class="accent">Step 3.</span> <span class="hl">기능명세서</span>를 확인하고 공유해요
+        </mj-text>
+        <mj-image src="img/11_features_tree.png" alt="기능명세서 자동 생성 결과" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
+          와이어프레임이 정리되면 각 기능에 대한 명세서도 함께 만들어져요. <strong>어떤 화면의 어떤 기능이, 어떤 예외를 포함해서, 어떤 API를 호출해야 하는지</strong>까지 구조화돼 있습니다.
+        </mj-text>
+        <mj-text padding="0" font-size="15px" line-height="1.7">
+          링크 하나로 개발자에게 공유하거나 PDF로 내려받을 수 있어요.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 4 -->
+    <mj-section background-color="#F5F3FA" padding="16px 32px 32px" css-class="pad-mob">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
+        <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
+          <span class="accent">Step 4.</span> <span class="hl">MCP 연동</span>으로 바로 개발까지
+        </mj-text>
+        <mj-image src="img/12_mcp_claude_code.png" alt="MCP 연동 화면" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
+          매니패스트 설정에서 <strong>MCP 연동 링크</strong>를 복사해서 Cursor나 Claude Code에 붙여넣으면, AI가 매니패스트 프로젝트를 직접 읽어갈 수 있어요.
+        </mj-text>
+        <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
+          이제 개발자 옆에서 이렇게 말하면 됩니다.
+        </mj-text>
+        <mj-text padding="12px 16px" font-size="14px" line-height="1.7" color="#1F1F2E" background-color="#FAF7FF" font-style="italic">
+          "매니패스트에서 리셀러 대시보드 기획 문서 읽어줘"
+        </mj-text>
+        <mj-text padding="14px 0 0" font-size="15px" line-height="1.7">
+          Claude Code가 MCP를 통해 PRD, 와이어프레임, 기능명세서 전체를 읽고, <span class="hl">각 스펙이 코드에 실제로 구현됐는지 대조</span>까지 해줍니다.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#ffffff" padding="24px 32px 32px" css-class="pad-mob">
+      <mj-column>
+        <mj-button href="https://manyfast.io/ko/" align="center">
+          와이어프레임과 기능명세서 만들어보기
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Real case quote box -->
+    <mj-section background-color="#ffffff" padding="16px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#F4F4F6" border-radius="16px" padding="24px">
+        <mj-text font-size="14px" font-weight="700" color="#6A3FD1" padding="0 0 10px" letter-spacing="0.3px">
+          매니패스트 팀이 직접 겪은 사례
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px">
+          저희 매니패스트 팀도 리셀러 정산 대시보드를 만들 때 이 방식을 실험했어요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px" font-style="italic">
+          "기획서에는 '리셀러 할인 코드는 Paddle과 연동되는 코드'라고 적혀 있었어요. 그런데 코드를 보니 <code>createCode()</code> 함수가 DB에 레코드만 만들고 Paddle API는 전혀 호출하지 않고 있었습니다. 리셀러가 할인 코드를 만들어서 공유해도, 유저가 그 코드를 입력하면 아무 일도 일어나지 않는 상황이었던 거죠."
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 12px" font-style="italic">
+          "코드 리뷰로 안 잡힙니다. 단위 테스트도 통과해요. QA에서도 '코드 생성 됩니다'하고 넘어가기 십상이에요. 그런데 AI가 이해하는 기획서를 작성하니, <strong>'Paddle 연동이라고 써있는데 코드에 Paddle 호출이 없네요?'라고 짚어준 거예요.</strong>"
+        </mj-text>
+        <mj-text font-size="14px" color="#6B7280" padding="0 0 16px" css-class="arrow-link">
+          <a href="https://blog.manyfast.io/blog/claudecode-notion-vibeplanning">매니패스트 블로그: 「클로드로 10분 만에 짠 코드, 노션 기획서로 3시간 검수」 →</a>
+        </mj-text>
+        <mj-divider border-color="#E5E5EA" border-width="1px" padding="8px 0 16px" />
+        <mj-text font-size="16px" line-height="1.75" font-weight="700" color="#1F1F2E" padding="0">
+          이 흐름이 매니패스트가 만들어내려는 세상이에요. <span class="hl">기획이 개발까지 끊김 없이 이어지는 세상</span>이요.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Closing -->
+    <mj-section background-color="#ffffff" padding="32px 32px 16px" css-class="pad-mob">
+      <mj-column>
+        <mj-text css-class="h1-mob" font-size="22px" font-weight="800" color="#1F1F2E" padding="0 0 12px" letter-spacing="-0.3px" line-height="1.4">
+          두 번의 미션, 여기까지 함께해주셔서 감사합니다.
+        </mj-text>
+        <mj-text padding="8px 0 16px" font-size="15px" line-height="1.75">
+          매니패스트로 만드신 첫 프로젝트가 어떤 결과로 이어졌는지 궁금해요. <strong>이 메일에 회신 주시면 저희가 직접 읽고 답해드립니다.</strong>
+        </mj-text>
+        <mj-text color="#6B7280" font-size="14px" padding="0 0 8px" line-height="1.7">
+          자주 묻는 질문, 사용법은 <a href="https://manyfast.io/features/ai">사용 가이드</a>에서<br />
+          다른 사용자들의 실사용 사례는 <a href="https://blog.manyfast.io">매니패스트 블로그</a>에서<br />
+          질문, 토론은 <a href="https://forum.manyfast.io">커뮤니티 포럼</a>에서 만나요.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="8px 32px 40px" css-class="pad-mob">
+      <mj-column>
+        <mj-divider border-color="#E9DEFF" border-width="1px" padding="0 0 20px" />
+        <mj-text font-size="15px" color="#1F1F2E" padding="0 0 4px">
+          앞으로도 매니패스트가 여러분의 기획 시간을 아끼고, 팀 논의를 앞당길 수 있도록 계속 발전시켜갈게요.
+        </mj-text>
+        <mj-text font-size="17px" font-weight="800" color="#1F1F2E" padding="12px 0 4px">
+          매니패스트 팀 드림
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#F5F3FA" padding="28px 32px 36px">
+      <mj-column>
+        <mj-text align="center" color="#6B7280" font-size="13px" line-height="1.7" padding="0 0 12px">
+          <a href="https://manyfast.io/ko/" style="color:#4A4A5E;">대시보드</a> &nbsp; <a href="https://manyfast.io/features/ai" style="color:#4A4A5E;">사용 가이드</a> &nbsp; <a href="https://blog.manyfast.io" style="color:#4A4A5E;">블로그</a> &nbsp; <a href="https://forum.manyfast.io" style="color:#4A4A5E;">포럼</a>
+        </mj-text>
+        <mj-text align="center" color="#9CA3AF" font-size="12px" line-height="1.6" padding="8px 0 4px">
+          Manyfast Inc.
+        </mj-text>
+        <mj-text align="center" color="#9CA3AF" font-size="12px" line-height="1.6" padding="4px 0">
+          <a href="{unsubscribe_link}" style="color:#9CA3AF; text-decoration: underline;">수신 거부</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

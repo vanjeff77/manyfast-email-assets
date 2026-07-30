@@ -10,6 +10,7 @@
       <mj-button background-color="#845DDE" color="#ffffff" font-weight="700" font-size="16px" inner-padding="16px 32px" border-radius="10px" />
     </mj-attributes>
     <mj-style>
+      p, div, td, span, a, strong { word-break: keep-all; overflow-wrap: break-word; }
       a { color: #6A3FD1; text-decoration: none; font-weight: 600; }
       a:hover { text-decoration: underline; }
       .arrow-link a { text-decoration: underline; }
@@ -114,7 +115,7 @@
           이미 여러 <span class="accent">PM, 기획자, 1인 창업자</span>분들이 매니패스트에서 기획 시간을 크게 줄이고, 팀과 논의를 더 빨리 시작하고 계세요. 함께하게 되어 반갑습니다.
         </mj-text>
         <mj-button href="https://manyfast.io/ko/" align="center">
-          지금 매니패스트 시작하기
+          지금 기획해보기
         </mj-button>
       </mj-column>
     </mj-section>
