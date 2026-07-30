@@ -32,27 +32,48 @@
       </mj-column>
     </mj-section>
 
-    <!-- Greeting headline -->
-    <mj-section background-color="#ffffff" padding="4px 32px 8px" css-class="pad-mob">
-      <mj-column>
-        <mj-text css-class="h1-mob" font-size="30px" line-height="1.3" font-weight="800" color="#1F1F2E" padding="0 0 16px" letter-spacing="-0.5px">
-          안녕하세요, 재훈님.<br />
-          <span class="hl">기획을 5분 만에</span> 시작할 준비 됐어요.
+    <!-- Founder letter (moved to top) -->
+    <mj-section background-color="#ffffff" padding="8px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#F4F4F6" border-radius="16px" padding="28px">
+        <mj-text font-size="14px" font-weight="700" color="#6A3FD1" padding="0 0 12px" letter-spacing="0.3px">
+          매니패스트를 왜 만들었냐면요
         </mj-text>
-        <mj-text padding="0 0 8px" color="#4A4A5E" font-size="16px" line-height="1.7">
-          기획서 붙잡고 며칠 씨름하지 않아도 되는 세상, 매니패스트가 준비했어요.
+        <mj-text css-class="h2-mob" font-size="22px" line-height="1.4" font-weight="800" color="#1F1F2E" padding="0 0 20px" letter-spacing="-0.3px">
+          "누구나 용기를 가지고<br />도전할 수 있는 세상을 만들자"
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
+          안녕하세요, 재훈님. <strong>매니패스트를 만든 허재혁</strong>입니다. 매니패스트에 함께해주셔서 반갑습니다. 오늘은 이 서비스를 왜 만들게 됐는지, 짧게 들려드리고 싶어서 편지를 씁니다.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
+          저는 원래 UX/UI 디자이너로 커리어를 시작했어요. 디자인 에이전시를 운영하면서 350개가 넘는 스타트업과 기업 프로젝트를 함께 했는데, 그때마다 반복해서 마주치는 문제가 있었어요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
+          <span class="hl">초기 기획이 명확하지 않으면 결국 프로젝트 전체가 흔들린다</span>는 거였죠. 개발이 반쯤 진행된 시점에 협의되지 않은 정책이 튀어나오고, 예외 케이스는 QA에서 터지고, 개발자와 기획자 사이에는 늘 오해가 남았어요. 저는 이걸 <strong>기획 부채</strong>라고 부릅니다. 지금 정의하지 않은 것들이 나중에 이자까지 붙어 돌아오는 거예요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
+          바이브 코딩 시대에 개발 생산성은 빠르게 향상되고 있지만, <span class="accent">정작 기획 단계가 병목이 되는 경우가 많다</span>고 느꼈어요. 코드는 AI가 10분이면 짜주는데, 그 코드가 무엇을 만들어야 하는지 결정하는 사람은 여전히 며칠씩 붙잡혀 있으니까요.
+        </mj-text>
+        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
+          그래서 매니패스트를 만들었어요. AI가 <strong>기획자의 역할을 대체하는 게 아니라, 기획자의 의사결정을 돕는 도구</strong>가 되도록요. 기획 초기 단계에서 논리적인 오류나 누락된 요소를 검토하고, 개선점을 제안하는 <span class="accent">'내비게이터' 역할</span>을 목표로 하고 있어요.
+        </mj-text>
+        <mj-divider border-color="#E5E5EA" border-width="1px" padding="8px 0 16px" />
+        <mj-text font-size="16px" line-height="1.75" font-weight="700" color="#1F1F2E" padding="0">
+          매니패스트가 <span class="hl">모든 프로젝트의 0번째 팀원</span> 같은 역할을 할 수 있기를 바랍니다. 아이디어는 있는데 어디서부터 정리해야 할지 막막한 순간에, 옆에서 첫 구조를 함께 잡아주는 팀원 말이에요.
+        </mj-text>
+        <mj-text font-size="14px" color="#6B7280" padding="20px 0 0">
+          허재혁, 매니패스트 창업자
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Founder greeting -->
-    <mj-section background-color="#ffffff" padding="24px 32px 8px" css-class="pad-mob">
+    <!-- Greeting headline (moved below letter) -->
+    <mj-section background-color="#ffffff" padding="32px 32px 8px" css-class="pad-mob">
       <mj-column>
-        <mj-text font-size="17px" color="#1F1F2E" padding="0 0 12px">
-          <span class="accent">매니패스트를 만든 허재혁</span>입니다.
+        <mj-text css-class="h1-mob" font-size="28px" line-height="1.3" font-weight="800" color="#1F1F2E" padding="0 0 12px" letter-spacing="-0.5px">
+          <span class="hl">기획을 5분 만에</span> 시작할 준비 됐어요.
         </mj-text>
-        <mj-text padding="0 0 16px">
-          기획서 하나 만들려고 며칠씩 씨름해본 경험, 다들 한 번쯤 있으실 거예요. 저희 팀도 지겹도록 겪었고, 그래서 매니패스트를 만들기 시작했어요.
+        <mj-text padding="0 0 8px" color="#4A4A5E" font-size="16px" line-height="1.7">
+          기획서 붙잡고 며칠 씨름하지 않아도 되는 세상, 매니패스트가 준비했어요.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -161,37 +182,6 @@
         </mj-text>
         <mj-text padding="0" font-size="15px" css-class="arrow-link">
           <a href="https://blog.manyfast.io/blog/claudecode-notion-vibeplanning">Manyfast 블로그에서 실제 사례 보기 →</a>
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-    <!-- Founder letter in soft grey rounded card -->
-    <mj-section background-color="#ffffff" padding="32px 32px 8px" css-class="pad-mob">
-      <mj-column background-color="#F4F4F6" border-radius="16px" padding="28px">
-        <mj-text font-size="14px" font-weight="700" color="#6A3FD1" padding="0 0 12px" letter-spacing="0.3px">
-          매니패스트를 왜 만들었냐면요
-        </mj-text>
-        <mj-text css-class="h2-mob" font-size="22px" line-height="1.4" font-weight="800" color="#1F1F2E" padding="0 0 20px" letter-spacing="-0.3px">
-          "누구나 용기를 가지고<br />도전할 수 있는 세상을 만들자"
-        </mj-text>
-        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
-          저는 원래 UX/UI 디자이너로 커리어를 시작했어요. 디자인 에이전시를 운영하면서 350개가 넘는 스타트업과 기업 프로젝트를 함께 했는데, 그때마다 반복해서 마주치는 문제가 있었어요.
-        </mj-text>
-        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
-          <span class="hl">초기 기획이 명확하지 않으면 결국 프로젝트 전체가 흔들린다</span>는 거였죠. 개발이 반쯤 진행된 시점에 협의되지 않은 정책이 튀어나오고, 예외 케이스는 QA에서 터지고, 개발자와 기획자 사이에는 늘 오해가 남았어요. 저는 이걸 <strong>기획 부채</strong>라고 부릅니다. 지금 정의하지 않은 것들이 나중에 이자까지 붙어 돌아오는 거예요.
-        </mj-text>
-        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
-          바이브 코딩 시대에 개발 생산성은 빠르게 향상되고 있지만, <span class="accent">정작 기획 단계가 병목이 되는 경우가 많다</span>고 느꼈어요. 코드는 AI가 10분이면 짜주는데, 그 코드가 무엇을 만들어야 하는지 결정하는 사람은 여전히 며칠씩 붙잡혀 있으니까요.
-        </mj-text>
-        <mj-text font-size="15px" line-height="1.8" color="#2E2E3E" padding="0 0 16px">
-          그래서 매니패스트를 만들었어요. AI가 <strong>기획자의 역할을 대체하는 게 아니라, 기획자의 의사결정을 돕는 도구</strong>가 되도록요. 기획 초기 단계에서 논리적인 오류나 누락된 요소를 검토하고, 개선점을 제안하는 <span class="accent">'내비게이터' 역할</span>을 목표로 하고 있어요.
-        </mj-text>
-        <mj-divider border-color="#E5E5EA" border-width="1px" padding="8px 0 16px" />
-        <mj-text font-size="16px" line-height="1.75" font-weight="700" color="#1F1F2E" padding="0">
-          매니패스트가 <span class="hl">모든 프로젝트의 0번째 팀원</span> 같은 역할을 할 수 있기를 바랍니다. 아이디어는 있는데 어디서부터 정리해야 할지 막막한 순간에, 옆에서 첫 구조를 함께 잡아주는 팀원 말이에요.
-        </mj-text>
-        <mj-text font-size="14px" color="#6B7280" padding="20px 0 0">
-          허재혁, 매니패스트 창업자
         </mj-text>
       </mj-column>
     </mj-section>
