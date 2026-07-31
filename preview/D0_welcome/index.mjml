@@ -145,6 +145,7 @@
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
           💬 채팅으로 <span class="hl">PRD 초안</span> 만들기
         </mj-text>
+        <mj-image src="img/07_prd_result.png" alt="완성된 PRD 초안 예시" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
           만들고 싶은 서비스 아이디어를 <strong>한 문장</strong>으로 입력하면, 매니패스트가 질문으로 구조를 잡아드려요. 대화가 끝나면 요구사항, 기능, 사용자 흐름이 정리된 <span class="accent">PRD 초안이 완성</span>됩니다.
         </mj-text>
@@ -160,6 +161,7 @@
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
           📄 <span class="hl">기능명세서, 유저플로우, 와이어프레임</span>으로 확장하기
         </mj-text>
+        <mj-image src="img/11_features_tree.png" alt="기능명세서 자동 생성 예시" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
           PRD가 있으면 기능명세서, 유저플로우, 와이어프레임까지 <strong>순서대로 이어져요.</strong> 각 기능이 어떤 화면에서 어떤 방식으로 동작해야 하는지 <span class="accent">개발자가 바로 이해할 수 있는 형태</span>로 정리됩니다.
         </mj-text>
