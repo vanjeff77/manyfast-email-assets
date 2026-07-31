@@ -163,7 +163,7 @@
         </mj-text>
         <mj-image src="img/11_features_tree.png" alt="기능명세서 자동 생성 예시" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
-          PRD가 있으면 기능명세서, 유저플로우, 와이어프레임까지 <strong>순서대로 이어져요.</strong> 각 기능이 어떤 화면에서 어떤 방식으로 동작해야 하는지 <span class="accent">개발자가 바로 이해할 수 있는 형태</span>로 정리됩니다.
+          PRD가 있으면 기능명세서, 유저플로우, 와이어프레임까지 <strong>순서대로 만들 수 있어요.</strong> 각 기능이 어떤 화면에서 어떤 방식으로 동작해야 하는지 <span class="accent">개발자가 바로 이해할 수 있는 형태</span>로 정리됩니다.
         </mj-text>
         <mj-text padding="0" font-size="15px" css-class="arrow-link">
           <a href="https://manyfast.io/features/ai">사용 가이드 보기 →</a>
@@ -179,7 +179,7 @@
         </mj-text>
         <mj-image src="img/03_mcp_cursor.png" alt="MCP 연동 화면" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
-          매니패스트에서 정리한 기획은 <strong>MCP를 통해</strong> Cursor, Claude Code가 직접 읽어갈 수 있어요. 코드가 기획서대로 만들어졌는지 <span class="accent">AI가 스스로 대조</span>해서 알려주는 흐름까지 이어집니다.
+          매니패스트에서 정리한 기획은 <strong>MCP를 통해</strong> Cursor, Claude Code가 직접 읽어갈 수 있어요. 코드가 기획서대로 <strong>충실하게 잘 만들어졌는지</strong>, <span class="accent">AI가 스스로 대조해서 알려주는 것</span>도 가능합니다.
         </mj-text>
         <mj-text padding="0" font-size="15px" css-class="arrow-link">
           <a href="https://blog.manyfast.io/blog/claudecode-notion-vibeplanning">Manyfast 블로그에서 실제 사례 보기 →</a>
@@ -211,11 +211,8 @@
         <mj-text font-size="15px" color="#1F1F2E" padding="0 0 4px">
           그럼 3일 뒤에 만나요.
         </mj-text>
-        <mj-text font-size="17px" font-weight="800" color="#1F1F2E" padding="0 0 4px">
-          허재혁
-        </mj-text>
-        <mj-text font-size="13px" color="#6B7280" padding="0">
-          매니패스트 창업자
+        <mj-text font-size="17px" font-weight="800" color="#1F1F2E" padding="0">
+          매니패스트 드림
         </mj-text>
       </mj-column>
     </mj-section>
