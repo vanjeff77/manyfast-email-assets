@@ -42,7 +42,7 @@
           이틀 전에 채팅으로 첫 PRD 초안을 만드는 미션을 드렸어요. 실제로 완성해보셨다면 이 메일이 특히 즐거우실 거예요.
         </mj-text>
         <mj-text padding="12px 0 0" font-size="17px" line-height="1.7" color="#1F1F2E">
-          오늘 미션은 방금 만든 그 PRD 하나를 <strong>와이어프레임과 기능명세서로 확장하고, MCP 연동으로 바로 개발까지 잇는 것</strong>이에요. 3분이면 됩니다.
+          오늘 미션은 방금 만든 그 PRD 하나를 <strong>기능명세서, 유저플로우, 와이어프레임으로 확장하고, MCP 연동으로 바로 개발까지 잇는 것</strong>이에요. 3분이면 됩니다.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -72,7 +72,7 @@
         </mj-text>
         <mj-divider border-color="#E5E5EA" border-width="1px" padding="8px 0 16px" />
         <mj-text font-size="16px" line-height="1.75" font-weight="700" color="#1F1F2E" padding="0">
-          매니패스트가 만드는 PRD는 처음부터 <span class="hl">와이어프레임, 기능, 사용자 흐름이 구조적으로 연결</span>돼 있어요. 그래서 클릭 한 번으로 이어지고, 그 문서를 그대로 AI 개발 도구가 이해할 수 있습니다.
+          매니패스트가 만드는 PRD는 <span class="hl">기능명세서, 유저플로우, 와이어프레임까지 순서대로 구조적으로 연결</span>돼요. 그래서 각 단계가 자연스럽게 이어지고, 그 문서를 그대로 AI 개발 도구가 이해할 수 있습니다.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -90,7 +90,7 @@
           💙 오늘의 미션 <span class="accent">(3분)</span>
         </mj-text>
         <mj-text color="#6B7280" font-size="15px" padding="0 0 12px" line-height="1.7">
-          PRD를 와이어프레임, 기능명세서, 개발까지 잇는 4단계.
+          PRD 하나로 기능명세서, 유저플로우, 와이어프레임, 그리고 개발까지 5단계로 잇습니다.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -112,14 +112,14 @@
     <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
-          <span class="accent">Step 2.</span> <span class="hl">와이어프레임</span>을 자동으로 생성해요
+          <span class="accent">Step 2.</span> <span class="hl">기능명세서</span>를 확인해요
         </mj-text>
-        <mj-image src="img/10_custom_generation.png" alt="와이어프레임 자동 생성" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-image src="img/11_features_tree.png" alt="기능명세서 자동 생성 결과" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
-          프로젝트 안에서 <strong>[와이어프레임 생성]</strong> 버튼을 눌러주세요. PRD에 담긴 사용자 흐름을 기반으로 각 화면과 화면 간 전환이 자동으로 정리됩니다.
+          PRD에서 도출된 각 기능이 <strong>어떤 화면의 어떤 기능이, 어떤 예외를 포함해서, 어떤 API를 호출해야 하는지</strong>까지 구조화돼 나와요.
         </mj-text>
         <mj-text padding="0" font-size="14px" line-height="1.7" color="#4A4A5E">
-          만들어진 와이어프레임은 그대로 확인, 수정할 수 있고, 필요하면 채팅으로 <em>"이 화면에 검색 기능 추가해줘"</em> 같은 요청도 가능해요.
+          필요하면 채팅으로 <em>"결제 예외 케이스 하나 더 추가해줘"</em> 같은 수정 요청도 가능합니다.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -128,11 +128,26 @@
     <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
-          <span class="accent">Step 3.</span> <span class="hl">기능명세서</span>를 확인하고 공유해요
+          <span class="accent">Step 3.</span> <span class="hl">유저플로우</span>를 만들어요
         </mj-text>
-        <mj-image src="img/11_features_tree.png" alt="기능명세서 자동 생성 결과" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
-          와이어프레임이 정리되면 각 기능에 대한 명세서도 함께 만들어져요. <strong>어떤 화면의 어떤 기능이, 어떤 예외를 포함해서, 어떤 API를 호출해야 하는지</strong>까지 구조화돼 있습니다.
+          기능명세서가 정리되면 <strong>[유저플로우 생성]</strong> 버튼을 눌러주세요. 각 기능이 어떤 순서로 이어지고 어디서 갈라지는지 사용자 관점에서 흐름이 정리됩니다.
+        </mj-text>
+        <mj-text padding="0" font-size="14px" line-height="1.7" color="#4A4A5E">
+          유저플로우는 다음 단계인 와이어프레임의 근거가 돼요. 흐름이 잘 잡혀야 각 화면이 어디에 필요한지도 명확해집니다.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Step 4 -->
+    <mj-section background-color="#F5F3FA" padding="16px 32px 8px" css-class="pad-mob">
+      <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
+        <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
+          <span class="accent">Step 4.</span> <span class="hl">와이어프레임</span>을 만들어요
+        </mj-text>
+        <mj-image src="img/10_custom_generation.png" alt="와이어프레임 자동 생성" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
+        <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
+          PRD, 기능명세서, 유저플로우가 모두 준비되면 <strong>[와이어프레임 생성]</strong> 버튼 하나로 각 화면과 화면 간 전환이 자동으로 정리됩니다.
         </mj-text>
         <mj-text padding="0" font-size="15px" line-height="1.7">
           링크 하나로 개발자에게 공유하거나 PDF로 내려받을 수 있어요.
@@ -140,11 +155,11 @@
       </mj-column>
     </mj-section>
 
-    <!-- Step 4 -->
+    <!-- Step 5 -->
     <mj-section background-color="#F5F3FA" padding="16px 32px 32px" css-class="pad-mob">
       <mj-column background-color="#ffffff" border-radius="16px" padding="24px">
         <mj-text css-class="h2-mob" font-size="20px" font-weight="800" color="#1F1F2E" padding="0 0 12px" line-height="1.35">
-          <span class="accent">Step 4.</span> <span class="hl">MCP 연동</span>으로 바로 개발까지
+          <span class="accent">Step 5.</span> <span class="hl">MCP 연동</span>으로 바로 개발까지
         </mj-text>
         <mj-image src="img/12_mcp_claude_code.png" alt="MCP 연동 화면" border-radius="10px" padding="4px 0 16px" fluid-on-mobile="true" />
         <mj-text padding="0 0 14px" font-size="15px" line-height="1.7">
@@ -157,7 +172,7 @@
           "매니패스트에서 리셀러 대시보드 기획 문서 읽어줘"
         </mj-text>
         <mj-text padding="14px 0 0" font-size="15px" line-height="1.7">
-          Claude Code가 MCP를 통해 PRD, 와이어프레임, 기능명세서 전체를 읽고, <span class="hl">각 스펙이 코드에 실제로 구현됐는지 대조</span>까지 해줍니다.
+          Claude Code가 MCP를 통해 PRD, 기능명세서, 유저플로우, 와이어프레임 전체를 읽고, <span class="hl">각 스펙이 코드에 실제로 구현됐는지 대조</span>까지 해줍니다.
         </mj-text>
       </mj-column>
     </mj-section>
